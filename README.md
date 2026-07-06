@@ -60,21 +60,29 @@ To Start my Home Lab Active Directory I downloaded a ISO of windows 10 and windo
 <br />
 <br />
 
-After setting up my DC and succesfully installing Windows Server 2019, I Renamed the two networks. One network is for the Internal network and the other is for External. Once my Network was configured I downloaded Active Directory Domain Services. <br/>
+After setting up my DC and succesfully installing Windows Server 2019, I Renamed the two networks. One network is for the Internal network and the other is for External. Once my Network was configured I downloaded Active Directory Domain Services and created the domain(mydomain.com). <br/>
 <img src="AD Lab/Screenshot 2026-07-04 201249.png"/>
 <img src="AD Lab/Screenshot 2026-07-04 201515.png"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+I created a admin account for the DC using Active Directory: <br/>
+<img src="AD Lab/Screenshot 2026-07-04 205159.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 205636.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 205527.png"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Next I downloaded Remote access and configured it so that clients on the private network can access the internet through the domain controller.  <br/>
+<img src="AD Lab/Screenshot 2026-07-04 205636.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 210006.png"/>
+<br />
+Up next was installing DHCP on the Domain Controller and configuring it.<br />
+<img src="AD Lab/Screenshot 2026-07-04 211152.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 212116.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 212447.png">
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+:  <br/>
+<img src=""/>
 <br />
 <br />
 Sanitization complete:  <br/>
