@@ -81,17 +81,37 @@ Up next was installing DHCP on the Domain Controller and configuring it.<br />
 <img src="AD Lab/Screenshot 2026-07-04 212447.png">
 <br />
 <br />
-:  <br/>
+After setting up my DHCP i created users using a Powershell Script:  <br/>
+<img src="AD Lab/Screenshot 2026-07-04 221045.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 222906.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 223709.png"/>
+<br />
+<br />
+Creating the CLIENT1 VM( Network setting adapter 1 should be set to internal network) Once the iso image of windows 10 is installed on CLIENT1 VM i test the connection to the Domain controller. Using Command prompt to pull up the ip configuration(Default gateway matches from my DC configuration)
+I pinged google.com to make sure my connection to the internet was working, also pinging my server aswell mydoamin.com:  <br/>
+<img src="AD Lab/Screenshot 2026-07-06 144218.png"/>
+<img src="AD Lab/Screenshot 2026-07-06 122820.png"/>
+<img src="AD Lab/Screenshot 2026-07-06 122922.png"/>
+<br />
+Next i went back to my Domain Controller to check that Client1 was indeed connected and showing up in my DHCP.   <br/>
+<img src="AD Lab/Screenshot 2026-07-06 123254.png"/>
+<img src="AD Lab/Screenshot 2026-07-06 123332.png"/>
+<br />
+<br />
+The next part of my Lab I created Organizational Units simulating a company and different departments withing the corporation.Such as IT, HR, Finance, and sales. After this i added users to each group and created security groups for each one such as IT-staff.<br/>
+<img src="AD Lab/Screenshot 2026-07-06 124456.png"/>
+<img src="AD Lab/Screenshot 2026-07-06 125056.png"/>
+<br />
+<br />
+After adding my users to groups I Implemented Group Policy(GPO) using Group policy managment tool. I kept it basic and Prohibited access to the control panel and pc settings for the HR-staff.(Done on DC VM)
+<img src="AD Lab/Screenshot 2026-07-06 125633.png"/>
+<br />
+<br />
+Lastly i configured the Password Policy for all users. ( Must be Done in Defualt Domain Policy) 
+<img src="AD Lab/Screenshot 2026-07-06 132543.png"/>
 <img src=""/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<img src=""/>
 
 <!--
  ```diff
