@@ -8,7 +8,7 @@ Built a Windows Active Directory home lab in a virtualized environment to simula
 
 <h3>Tools & Technologies</h3>
 
-Windows Server 2022
+Windows Server 2019
 
 Active Directory Domain Services (AD DS)
 
@@ -18,7 +18,7 @@ Active Directory Users and Computers (ADUC)
 
 DNS
 
-Windows 11 (Client VM)
+Windows 10 (Client VM)
 
 Oracle VirtualBox 
 
@@ -28,17 +28,41 @@ Windows Administration Tools
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+Host OS: Windows 10
 
-<h2>Program walk-through:</h2>
+Virtualization: Oracle VirtualBox 
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Server: Windows Server 2019
+
+Client: Windows 10 pro
+
+Directory Services: Active Directory Domain Services (AD DS)
+
+Domain Services: DNS
+
+<h2>Management Tools</h2>
+
+Active Directory Users and Computers (ADUC)
+
+Group Policy Management Console (GPMC)
+
+Server Manager
+
+Network: VirtualBox Internal Network / NAT 
+
+<h2>Walk-through:</h2>
+<br />
+
+To Start my Home Lab Active Directory I downloaded a ISO of windows 10 and windows server 2019. I used VirtualBox for this environment, after downloading the images i created my Domain Controller first which would be my server. For my network setting for my Domain Controller, adapter 1 is set to NAT and adapter 2 is set to internal network. ( Important later on when connecting CLIENT1 Virtual machine to the Domain controller Virtual machine. <br/>
+<img src="AD Lab/Screenshot 2026-07-06 134440.png">
+<img src="AD Lab/Screenshot 2026-07-06 134503.png">
+<img src="AD Lab/Screenshot 2026-07-06 134528.png">
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+After setting up my DC and succesfully installing Windows Server 2019, I Renamed the two networks. One network is for the Internal network and the other is for External. Once my Network was configured I downloaded Active Directory Domain Services. <br/>
+<img src="AD Lab/Screenshot 2026-07-04 201249.png"/>
+<img src="AD Lab/Screenshot 2026-07-04 201515.png"/>
 <br />
 <br />
 Enter the number of passes: <br/>
