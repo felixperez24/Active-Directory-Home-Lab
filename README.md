@@ -109,9 +109,12 @@ After adding my users to groups I Implemented Group Policy(GPO) using Group poli
 <br />
 Lastly i configured the Password Policy for all users. ( Must be Done in Defualt Domain Policy) 
 <img src="AD Lab/Screenshot 2026-07-06 132543.png"/>
-<img src=""/>
 </p>
-<img src=""/>
+<h2>What I Learned</h2>
+One challenge I encountered was ensuring that Group Policy changes were applied correctly to the intended users and computers. After verifying that the GPOs were linked to the correct Organizational Units and confirming group membership, I used the `gpupdate /force` command and verified the applied policies to ensure the settings took effect. I also experienced connectivity issues while configuring remote administration, which I resolved by enabling Remote Desktop, confirming the appropriate Windows Firewall rules were enabled, and verifying network connectivity between the virtual machines. Working through these issues improved my troubleshooting skills and gave me a deeper understanding of how Active Directory and Group Policy function in a Windows domain environment.
+
+
+
 
 <!--
  ```diff
